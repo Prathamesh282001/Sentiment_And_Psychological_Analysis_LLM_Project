@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceVibe Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #62269f;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Audio File</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="audio" accept="audio/*">
+            <button type="submit">Upload</button>
+        </form>
+    <div id="sentimentDisplay">
+        {% if output %}
+        <h1>Sentiment & Psychological Analysis</h1>
+        <p>{{ output }}</p>
+        <button id="clearButton" onclick="clearSentiment()">Clear</button>
+        {% endif %}
+    </div>
+
+        <script>
+            function clearSentiment() {
+                document.getElementById('sentimentDisplay').textContent = '';
+                window.location.href = "/";
+            }
+        </script>
+    </div>
+</body>
+</html>
