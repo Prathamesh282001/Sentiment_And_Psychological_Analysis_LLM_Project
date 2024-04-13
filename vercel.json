@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "functions": null,
     "builds": [
       {
         "src": "./app.py",
