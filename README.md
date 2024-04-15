@@ -60,6 +60,8 @@ The project aims to develop a web interface for analyzing audio conversations to
 
 The project is deployed on Vercel, providing a public URL for accessibility. Users can access the web interface via the provided URL to upload audio files and receive sentiment and psychological insights.
 
+URL : [https://voice-vibe-analyzer-mercys-projects-65fb0ef9.vercel.app]
+
 ## Conclusion
 
 The Sentiment & Psychological Analysis project combines speech-to-text conversion and sentiment analysis to provide valuable insights from audio conversations. With its user-friendly interface and integration of advanced AI models, the project offers a powerful tool for understanding and analyzing human interactions.
