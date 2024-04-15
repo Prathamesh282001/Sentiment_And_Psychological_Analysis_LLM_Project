@@ -1,5 +1,5 @@
 import uvicorn
-from fastapiapp import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from src.speech_to_text import transcribe_audio
