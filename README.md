@@ -1,5 +1,11 @@
 # Sentiment & Psychological Analysis
 
+
+
+https://github.com/Prathamesh282001/Sentiment_And_Psychological_Analysis_LLM_Project/assets/122107260/bbb77194-1aa3-4566-aba5-caad8e645e5e
+
+
+
 ## Introduction
 
 This document provides a comprehensive overview of the Sentiment & Psychological Analysis project, including the development of a web interface, integration of speech-to-text functionality, sentiment analysis using OpenAI, and deployment on Vercel.
