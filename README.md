@@ -1,4 +1,4 @@
-# Sentiment & Psychological Analysis Project Documentation
+# Sentiment & Psychological Analysis
 
 ## Introduction
 
